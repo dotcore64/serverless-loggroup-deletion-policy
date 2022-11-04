@@ -1,0 +1,12 @@
+service: gcp
+
+plugins:
+  - serverless-loggroup-deletion-policy # self-import
+
+provider:
+  name: google
+  runtime: nodejs
+
+functions:
+  hello:
+    handler: handler.hello

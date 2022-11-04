@@ -1,0 +1,76 @@
+{
+  "name": "serverless-loggroup-deletion-policy",
+  "version": "0.0.1",
+  "description": "Set a deletion policy on your serverless service log groups",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=14.0"
+  },
+  "scripts": {
+    "lint": "eslint --cache .",
+    "build": "tsc -p tsconfig.dist.json",
+    "test": "mocha",
+    "cover": "c8 npm test",
+    "prepare": "husky install"
+  },
+  "homepage": "https://github.com/dotcore64/serverless-loggroup-deletion-policy",
+  "author": "Julian Grinblat <julian@dotcore.co.il>",
+  "bugs": {
+    "url": "https://github.com/dotcore64/serverless-loggroup-deletion-policy/issues",
+    "email": "julian@dotcore.co.il"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotcore64/serverless-loggroup-deletion-policy.git"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "serverless",
+    "sls",
+    "aws",
+    "cloudwatch",
+    "log groups",
+    "logs",
+    "lambda"
+  ],
+  "devDependencies": {
+    "@serverless/test": "^11.1.0",
+    "@types/chai": "^4.3.3",
+    "@types/chai-as-promised": "^7.1.5",
+    "@types/mocha": "^10.0.0",
+    "@types/serverless": "^3.12.8",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "c8": "^7.12.0",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unicorn": "^44.0.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "log": "^6.3.1",
+    "mocha": "^10.1.0",
+    "prettier": "^2.7.1",
+    "serverless": "^3.23.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "serverless": "^3.2.0"
+  }
+}
