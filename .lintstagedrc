@@ -1,0 +1,6 @@
+{
+  "(src|test)/**/*.{js,ts}": [
+    "prettier",
+    "eslint"
+  ]
+}

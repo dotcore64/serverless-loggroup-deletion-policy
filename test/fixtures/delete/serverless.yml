@@ -1,0 +1,16 @@
+service: delete
+
+plugins:
+  - serverless-loggroup-deletion-policy # self-import
+
+custom:
+  logGroupDeletionPolicy:
+    keepLambdaLogs: false
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+
+functions:
+  hello:
+    handler: handler.hello

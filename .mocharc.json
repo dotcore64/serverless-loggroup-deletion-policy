@@ -1,0 +1,8 @@
+{
+  "reporter": "spec",
+  "ui": "bdd",
+  "extension": ["js", "ts"],
+  "timeout": 5000,
+  "loader": "ts-node/esm",
+  "require": ["./test/setup.js"]
+}
