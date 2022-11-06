@@ -1,7 +1,7 @@
 import Serverless from "serverless";
 import Plugin, { Logging } from "serverless/classes/Plugin.js"; // eslint-disable-line n/no-missing-import
 
-export default class LambdaLogKeeperPlugin implements Plugin {
+export default class implements Plugin {
   readonly hooks: { [key: string]: any } = {
     "before:package:finalize": () => this.setDeletionRetainOnLambdaLogs(),
   };
