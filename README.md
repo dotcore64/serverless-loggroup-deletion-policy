@@ -40,7 +40,7 @@ The original work was very useful in getting this plugin up and running.
 
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
 
-[build-badge]: https://img.shields.io/github/workflow/status/dotcore64/serverless-loggroup-deletion-policy/test/master?style=flat-square
+[build-badge]: https://img.shields.io/github/actions/workflow/status/dotcore64/serverless-loggroup-deletion-policy/test.yml?event=push&style=flat-square
 [build]: https://github.com/dotcore64/serverless-loggroup-deletion-policy/actions
 [npm-badge]: https://img.shields.io/npm/v/serverless-loggroup-deletion-policy.svg?style=flat-square
 [npm]: https://www.npmjs.org/package/serverless-loggroup-deletion-policy
