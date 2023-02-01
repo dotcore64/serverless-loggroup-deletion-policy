@@ -1,6 +1,6 @@
 {
   "name": "serverless-loggroup-deletion-policy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Set a deletion policy on your serverless service log groups",
   "type": "module",
   "exports": {
