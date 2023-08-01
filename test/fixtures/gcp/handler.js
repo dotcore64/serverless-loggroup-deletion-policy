@@ -7,6 +7,6 @@ export const hello = async (event) => ({
       input: event,
     },
     null,
-    2
+    2,
   ),
 });

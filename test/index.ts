@@ -36,7 +36,7 @@ describe("serverless-loggroup-deletion-policy", () => {
       const resources = require(join(
         cwd,
         ".serverless",
-        "cloudformation-template-update-stack.json"
+        "cloudformation-template-update-stack.json",
       )).Resources;
 
       expect(logsBuffer).to.deep.equal([
@@ -56,7 +56,7 @@ describe("serverless-loggroup-deletion-policy", () => {
       const resources = require(join(
         cwd,
         ".serverless",
-        "cloudformation-template-update-stack.json"
+        "cloudformation-template-update-stack.json",
       )).Resources;
 
       expect(logsBuffer).to.deep.equal([
@@ -76,7 +76,7 @@ describe("serverless-loggroup-deletion-policy", () => {
       const resources = require(join(
         cwd,
         ".serverless",
-        "cloudformation-template-update-stack.json"
+        "cloudformation-template-update-stack.json",
       )).Resources;
 
       expect(logsBuffer).to.deep.equal([
@@ -94,10 +94,10 @@ describe("serverless-loggroup-deletion-policy", () => {
         runServerless(serverlessRoot, {
           cwd,
           command: "package",
-        })
+        }),
       ).to.be.rejectedWith(
         Error,
-        "serverless-loggroup-deletion-policy can only be used with the 'aws' provider"
+        "serverless-loggroup-deletion-policy can only be used with the 'aws' provider",
       );
     });
 
@@ -108,10 +108,10 @@ describe("serverless-loggroup-deletion-policy", () => {
         runServerless(serverlessRoot, {
           cwd,
           command: "package",
-        })
+        }),
       ).to.be.rejectedWith(
         Error,
-        "Please specify `logGroupDeletionPolicy` in your serverless.yml file!"
+        "Please specify `logGroupDeletionPolicy` in your serverless.yml file!",
       );
     });
 
@@ -122,10 +122,10 @@ describe("serverless-loggroup-deletion-policy", () => {
         runServerless(serverlessRoot, {
           cwd,
           command: "package",
-        })
+        }),
       ).to.be.rejectedWith(
         Error,
-        /Configuration error at 'custom.logGroupDeletionPolicy.keepLambdaLogs': must be boolean/
+        /Configuration error at 'custom.logGroupDeletionPolicy.keepLambdaLogs': must be boolean/,
       );
     });
 
@@ -137,10 +137,10 @@ describe("serverless-loggroup-deletion-policy", () => {
         runServerless(serverlessRoot, {
           cwd,
           command: "package",
-        })
+        }),
       ).to.be.rejectedWith(
         Error,
-        "Please specify `logGroupDeletionPolicy.keepLambdaLogs` with true or false in your serverless.yml file!"
+        "Please specify `logGroupDeletionPolicy.keepLambdaLogs` with true or false in your serverless.yml file!",
       );
     });
   });
