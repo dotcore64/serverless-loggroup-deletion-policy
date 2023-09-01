@@ -33,11 +33,9 @@ describe("serverless-loggroup-deletion-policy", () => {
       });
 
       // eslint-disable-next-line import/no-dynamic-require
-      const resources = require(join(
-        cwd,
-        ".serverless",
-        "cloudformation-template-update-stack.json",
-      )).Resources;
+      const resources = require(
+        join(cwd, ".serverless", "cloudformation-template-update-stack.json"),
+      ).Resources;
 
       expect(logsBuffer).to.deep.equal([
         "setting DeletionPolicy: Retain on /aws/lambda/retain-dev-hello",
@@ -53,11 +51,9 @@ describe("serverless-loggroup-deletion-policy", () => {
       });
 
       // eslint-disable-next-line import/no-dynamic-require
-      const resources = require(join(
-        cwd,
-        ".serverless",
-        "cloudformation-template-update-stack.json",
-      )).Resources;
+      const resources = require(
+        join(cwd, ".serverless", "cloudformation-template-update-stack.json"),
+      ).Resources;
 
       expect(logsBuffer).to.deep.equal([
         "setting DeletionPolicy: Delete on /aws/lambda/delete-dev-hello",
@@ -73,11 +69,9 @@ describe("serverless-loggroup-deletion-policy", () => {
       });
 
       // eslint-disable-next-line import/no-dynamic-require
-      const resources = require(join(
-        cwd,
-        ".serverless",
-        "cloudformation-template-update-stack.json",
-      )).Resources;
+      const resources = require(
+        join(cwd, ".serverless", "cloudformation-template-update-stack.json"),
+      ).Resources;
 
       expect(logsBuffer).to.deep.equal([
         "setting DeletionPolicy: Retain on /aws/lambda/variable-dev-hello",
