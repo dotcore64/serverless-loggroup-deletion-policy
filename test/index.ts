@@ -41,7 +41,7 @@ describe("serverless-loggroup-deletion-policy", () => {
         "setting DeletionPolicy: Retain on /aws/lambda/retain-dev-hello",
       ]);
       expect(resources.HelloLogGroup.DeletionPolicy).to.equal("Retain");
-    });
+    }).timeout(10_000); // the first call to `runServerless` is very expensive for some reason?
 
     it("adds a `DeletionPolicy: Delete` to Log Group", async () => {
       const cwd = new URL("fixtures/delete", import.meta.url).pathname;
