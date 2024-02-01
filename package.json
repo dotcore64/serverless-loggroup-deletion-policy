@@ -15,7 +15,7 @@
     "build": "tsc -p tsconfig.dist.json",
     "test": "mocha",
     "cover": "c8 npm test",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "homepage": "https://github.com/dotcore64/serverless-loggroup-deletion-policy",
   "author": "Julian Grinblat <julian@dotcore.co.il>",
