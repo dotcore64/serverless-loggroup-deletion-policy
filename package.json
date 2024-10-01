@@ -43,7 +43,7 @@
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.0",
     "@serverless/test": "^11.1.1",
-    "@types/chai": "^4.3.19",
+    "@types/chai": "^5.0.0",
     "@types/chai-as-promised": "^8.0.1",
     "@types/mocha": "^10.0.8",
     "@types/node": "^22.7.4",
