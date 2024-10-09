@@ -1,5 +1,6 @@
-import Serverless from "serverless";
-import Plugin, { Logging } from "serverless/classes/Plugin.js"; // eslint-disable-line n/no-missing-import
+import type Serverless from "serverless";
+import type Plugin from "serverless/classes/Plugin.js";
+import type { Logging } from "serverless/classes/Plugin.js";
 
 export default class implements Plugin {
   readonly hooks: { [key: string]: any } = {
