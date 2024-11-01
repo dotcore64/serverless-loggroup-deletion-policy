@@ -41,7 +41,7 @@
     "lambda"
   ],
   "devDependencies": {
-    "@eslint-community/eslint-plugin-eslint-comments": "^4.4.0",
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
     "@types/chai": "^5.0.0",
     "@types/chai-as-promised": "^8.0.1",
     "@types/mocha": "^10.0.8",
