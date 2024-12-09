@@ -1,5 +1,7 @@
 service: retain
 
+licenseKey: ${env:SERVERLESS_LICENSE_KEY}
+
 plugins:
   - serverless-loggroup-deletion-policy # self-import
 

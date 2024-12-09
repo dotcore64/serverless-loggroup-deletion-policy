@@ -1,5 +1,6 @@
 service: non-boolean
 
+licenseKey: ${env:SERVERLESS_LICENSE_KEY}
 configValidationMode: error
 
 plugins:

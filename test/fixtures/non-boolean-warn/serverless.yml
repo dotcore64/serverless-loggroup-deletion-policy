@@ -1,5 +1,7 @@
 service: non-boolean
 
+licenseKey: ${env:SERVERLESS_LICENSE_KEY}
+
 configValidationMode: warn
 
 plugins:
