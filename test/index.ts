@@ -86,7 +86,7 @@ describe("serverless-loggroup-deletion-policy", () => {
 
       return expect(runServerless(cwd)).to.be.rejectedWith(
         Error,
-        /Configuration error at 'custom.logGroupDeletionPolicy.keepLambdaLogs': must be boolean/,
+        /at 'custom.logGroupDeletionPolicy.keepLambdaLogs': must be boolean/,
       );
     });
 
