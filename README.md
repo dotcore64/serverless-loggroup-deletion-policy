@@ -1,3 +1,7 @@
+> [!WARNING]
+>
+> `serverless-loggroup-deletion-policy` is no longer actively developed. I do no longer use the serverless framework and despite best efforts on my part, they made it too cumbersome to develop plugins by requiring access and license keys, which don't seem to work randomly. If someone is interested in taking over please contact me, thanks!
+
 # serverless-loggroup-deletion-policy
 
 [![Build Status][build-badge]][build]
